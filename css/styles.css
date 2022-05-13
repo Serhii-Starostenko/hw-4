@@ -130,11 +130,12 @@ margin-right: 50px;
 .contacts{
 display: flex;
 padding: 0px;
-margin-left: 331px;
+margin-left:auto;
 }
 
 .contacts li{
     list-style: none;
+    display: flex;
    
   
 }
@@ -154,11 +155,25 @@ text-decoration: none;
 display: block;
 margin-right:50px;
 padding: 32px 0px;
+display: flex;
 
 
 color:#757575
 
 }
+/* .contact-mail::before{
+    content: "";
+    display: flex;
+   width: 16px;
+   height: 12px;
+margin-right: 10px;
+   background-image: url(../images/envelope.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+} */
+
+
 .contact-mail:hover,.contact-mail:focus  {
     color: var(--accent-text-color);
 }
@@ -199,10 +214,19 @@ color:#757575
 
 /* hero */
 .section-hero{
-background-color: rgba(47, 48, 58, 1);
-padding: 200px 0px;
-text-align: center;
-}
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+background-color:rgba(47, 48, 58, 1);
+background-image: linear-gradient(to left,rgba(47, 48, 58, 0.4)
+,rgba(47, 48, 58, 0.4) ),
+url(../images/hero-bgr.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+} 
 
 
 .hero-container{
@@ -210,6 +234,8 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
+padding: 200px 0px;
+    text-align: center;
 
 }
 .hero-title{
