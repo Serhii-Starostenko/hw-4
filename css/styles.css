@@ -475,34 +475,66 @@ padding: 12px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.client-title { 
+    color:var(--title-text-color);
+    text-align: center;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+}
+
+
+
+
 .icon-lists{
     display:flex;
     height: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 .icon-lists .item{
     display: inline-block;
     list-style: none;
-    height: 92px;;
+    
+    margin-right: 30px;
+}
+.icon-lists .item:last-child{
+    margin-right: 0px;
 }
 
 .icon-lists .item a{
     display:flex;
-    width: 170;
-    height: 92px;
-    border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 4px;
-    
+    width: 169px;
+    height: 90px;
+    /* border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px; */
 }
+
 .client-icon{
     padding: 16px 32px;
     width: 170px;
     height: 92;
+    border: 1px solid rgba(175, 177, 184, 1);
+        border-radius: 4px;
     justify-content:flex-start;
+    fill:rgba(175, 177, 184, 1);
 }
-.client-icon use{
+
+.client-icon:hover,.client-icon:focus {
+    fill: var(--accent-text-color);
+    border-color:var(--accent-text-color);
+}
+
+
+.client-icon-use{
     
-width:106px;
- height:60px;
+width: 106px;;
+ height: 62px;
  
 }
 
